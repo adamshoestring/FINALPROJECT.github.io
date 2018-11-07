@@ -9,6 +9,8 @@ header{
 	color: white
 } 
 
-h4 sticky-top{
+h4{
 	position: relative;
+	background-color: black;
+	color: chartreuse;
 }
