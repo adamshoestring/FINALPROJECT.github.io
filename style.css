@@ -1,8 +1,8 @@
 header{
 	text-align: center;
-	font-size: 150px;
+	font-size: 200px;
 	background-color: chartreuse;
-	height: 115px;
+	height: 125px;
 	display: flex;
 	justify-content: center;
 	align-items: center; 
@@ -12,5 +12,5 @@ header{
 h4{
 	position: relative;
 	background-color: black;
-	color: chartreuse;
+	color: white;
 }
