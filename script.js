@@ -43,9 +43,9 @@ function displayBooks(){
 			<h2> 
 				<img src="${books[i].cover}">
 				${books[i].title} by ${books[i].author} in ${books[i].year} 
-				<input type="button" value="READ" onclick="tapButton(this)">
-				<input type="button" value="DELETE" onclick="deleteBook(${i})" />
-				<input type="button" value="CHECKOUT" onclick="addRentBook()">			
+				<input type="button" class="btn btn-success btn-sm" data-toggle="button" aria-pressed="true" value="READ" onclick="tapButton(this)">
+				<input type="button" class="btn btn-danger btn-sm" value="DELETE" onclick="deleteBook(${i})" />
+				<input type="button" class="btn btn-outline-primary btn-sm" value="CHECKOUT" onclick="addRentBook()">			
 			</h2>
 
 			<hr>
