@@ -12,10 +12,7 @@ let books = [
 	
 ];
 
-
-
-
-
+/*-----------------------------------------------------------------------*/
 
 function addBook(){
 	let bookName = document.getElementById('bookName').value;
@@ -33,10 +30,12 @@ function addBook(){
 	displayBooks();
 } 
 
+/*-----------------------------------------------------------------------*/
 
 function displayBooks(){
 	
 	document.getElementById('quantityDisplay').innerHTML = ' _QUANTITY ' + books.length;
+	document.getElementById('rentDisplay').innerHTML = ' _BORROWED ' + rentBooks.length;
 
 	document.getElementById('display').innerHTML = '';
 	for(let i = 0; i < books.length; i++){
@@ -46,7 +45,7 @@ function displayBooks(){
 				${books[i].title} by ${books[i].author} in ${books[i].year} 
 				<input type="button" value="READ" onclick="tapButton(this)">
 				<input type="button" value="DELETE" onclick="deleteBook(${i})" />
-				<input type="button" value="CHECKOUT">			
+				<input type="button" value="CHECKOUT" onclick="addRentBook()">			
 			</h2>
 
 			<hr>
@@ -54,6 +53,10 @@ function displayBooks(){
 	}
 	
 }
+
+
+/*-----------------------------------------------------------------------*/
+
 
 function tapButton(readButton){
 	
@@ -64,7 +67,7 @@ function tapButton(readButton){
 	}
 }
 
-
+/*-----------------------------------------------------------------------*/
 
 function deleteBook(index){
 	
@@ -73,6 +76,8 @@ function deleteBook(index){
 	displayBooks();
 }
 
+/*-----------------------------------------------------------------------*/
+
 function sortBooks(){
 	books.sort(function(a, b){
 		return a.title > b.title
@@ -80,14 +85,37 @@ function sortBooks(){
 	displayBooks();
 }
 
-function checkOut(){
-	
+/*-----------------------------------------------------------------------*/
+
+function bookAlert(){
+	let date=new Date().toDateString()
+	alert("Thank You for borrowing our Book! Please return this Book 2 Weeks from Today, " + date );
 }
 
+/*-----------------------------------------------------------------------*/
 
+let rentBooks = []; 
 
+function addRentBook(){
+	let bookName = document.getElementById('bookName').value;
+	let bookAuthor = document.getElementById('bookAuthor').value;
+	let bookYear = document.getElementById('bookYear').value;
+	let bookCover = document.getElementById('bookCover').value;
 
+	rentBooks.push({
+		title: bookName,
+		author: bookAuthor,
+		year: bookYear,
+		cover: bookCover
+	});
 
+	bookAlert();
+	deleteBook();
+	displayBooks();
+	console.log(rentBooks);
+} 
+
+/*-----------------------------------------------------------------------*/
 
 
 
