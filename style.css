@@ -37,9 +37,19 @@ a:hover{
 
 }
 
+input.sortBooks().button{
+	border-radius: 12px;
+}
 
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+} 
 
-
+#navbar{
+	background-color: black;
+}
 
 
 
