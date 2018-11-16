@@ -8,7 +8,12 @@ let books = [
 	{title:'Antigone', author:'Sophocles', year:2012, cover:'https://is3-ssl.mzstatic.com/image/thumb/Publication/v4/49/fc/4c/49fc4cb2-7706-dd12-46e3-a312e99e26a0/source/225x225bb.jpg'},
 	{title:'Fooling Houdini', author:'Alex Stone', year:2012, cover:'https://is5-ssl.mzstatic.com/image/thumb/Publication3/v4/5e/24/4b/5e244b6d-1770-cc84-d022-e8d5a2f9798d/source/225x225bb.jpg'},
 	{title:'Red Notice', author:'Bill Browder', year:2015, cover:'https://is5-ssl.mzstatic.com/image/thumb/Publication69/v4/d3/01/f2/d301f229-6297-d5ad-d7c2-df089bfd4552/source/225x225bb.jpg'},
-	{title:'Paperless', author:'David Sparks', year:2012, cover:'https://is4-ssl.mzstatic.com/image/thumb/Publication/v4/cd/dd/81/cddd810b-f3f2-fca4-6865-fcc164308d8f/source/225x225bb.jpg'}
+	{title:'Paperless', author:'David Sparks', year:2012, cover:'https://is4-ssl.mzstatic.com/image/thumb/Publication/v4/cd/dd/81/cddd810b-f3f2-fca4-6865-fcc164308d8f/source/225x225bb.jpg'},
+	{title:'Lincoln The Unknown', author:'Dale Carnegie', year:2014, cover:'https://is3-ssl.mzstatic.com/image/thumb/Publication2/v4/ef/c7/08/efc708c5-111c-2836-46c3-e66b6fd5b4fb/source/225x225bb.jpg'},
+	{title:'The Elite', author:'Kiera Cass', year:2013, cover:'https://is5-ssl.mzstatic.com/image/thumb/Publication2/v4/4a/f3/60/4af36058-627d-3517-4a22-45b4748ce118/source/225x225bb.jpg'},
+	{title:'I Am Error', author:'Nathan Altice', year:2015, cover:'https://is3-ssl.mzstatic.com/image/thumb/Publication1/v4/6c/7a/de/6c7ade24-5f0c-d963-5609-c4dd43cdb5c7/source/225x225bb.jpg'},
+	{title:'The Idealist', author:'Justin Peters', year:2016, cover:'https://is3-ssl.mzstatic.com/image/thumb/Publication111/v4/cc/b0/5c/ccb05c03-66ee-b99f-7260-8892d52a1b43/source/225x225bb.jpg'},
+	{title:'Simply Keto', author:'Suzanne Ryan', year:2017, cover:'https://is5-ssl.mzstatic.com/image/thumb/Publication128/v4/bd/1d/3e/bd1d3e85-3ed5-51d3-7a8b-436eea1a90bd/source/225x225bb.jpg'}
 	
 ];
 
