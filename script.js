@@ -88,7 +88,7 @@ function deleteBook(index){
 
 /*-----------------------------------------------------------------------*/
 
-function sortBooks(){
+function sortBooks(index){
 	books.sort(function(a, b){
 		return a.title > b.title
 	});
