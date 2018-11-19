@@ -44,7 +44,7 @@ function addBook(){
 
 function displayBooks(){
 	
-	document.getElementById('quantityDisplay').innerHTML = ' _QUANTITY ' + books.length;
+	document.getElementById('quantityDisplay').innerHTML = ' _WE HAVE ' + books.length + ' BOOKS';
 	document.getElementById('rentDisplay').innerHTML = ' _BORROWED ' + rentBooks.length;
 
 	document.getElementById('display').innerHTML = '';
@@ -117,11 +117,11 @@ function addRentBook(index){
 		year: books[index].year,
 		cover: books[index].cover
 	});
-	deleteBook(index)
+	
 
 
 	bookAlert();
-	deleteBook();
+	deleteBook(index);
 	displayBooks();
 	console.log(rentBooks);
 } 
