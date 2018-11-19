@@ -32,7 +32,12 @@ function addBook(){
 		cover: bookCover
 	});
 
+	sortBooks();
 	displayBooks();
+	document.getElementById('bookName').value="";
+	document.getElementById('bookAuthor').value="";
+	 document.getElementById('bookYear').value="";
+	document.getElementById('bookCover').value="";
 } 
 
 /*-----------------------------------------------------------------------*/
@@ -50,7 +55,7 @@ function displayBooks(){
 				${books[i].title} by ${books[i].author} in ${books[i].year} 
 				<input type="button" class="btn btn-success btn-sm" data-toggle="button" aria-pressed="true" value="READ" onclick="tapButton(this)">
 				<input type="button" class="btn btn-danger btn-sm" value="DELETE" onclick="deleteBook(${i})" />
-				<input type="button" class="btn btn-outline-primary btn-sm" value="CHECKOUT" onclick="addRentBook()">			
+				<input type="button" class="btn btn-outline-primary btn-sm" value="CHECKOUT" onclick="addRentBook(${i})">			
 			</h2>
 
 			<hr>
@@ -101,18 +106,19 @@ function bookAlert(){
 
 let rentBooks = []; 
 
-function addRentBook(){
-	let bookName = document.getElementById('bookName').value;
-	let bookAuthor = document.getElementById('bookAuthor').value;
-	let bookYear = document.getElementById('bookYear').value;
-	let bookCover = document.getElementById('bookCover').value;
-
+function addRentBook(index){
+	// let bookName = document.getElementById('bookName').value;
+	// let bookAuthor = document.getElementById('bookAuthor').value;
+	// let bookYear = document.getElementById('bookYear').value;
+	// let bookCover = document.getElementById('bookCover').value;
 	rentBooks.push({
-		title: bookName,
-		author: bookAuthor,
-		year: bookYear,
-		cover: bookCover
+		title: books[index].title,
+		author: books[index].author,
+		year: books[index].year,
+		cover: books[index].cover
 	});
+	deleteBook(index)
+
 
 	bookAlert();
 	deleteBook();
